@@ -1,51 +1,46 @@
-# Control Bionics Support Hub V3.0
+# Control Bionics Support Hub V3.2
 
-This build combines the existing NeuroStrip visual support hub with a new NeuroNode + AAC support area.
+## Main structure
+The homepage now has only two top-level support sections:
+1. NeuroStrip — guided by Nero
+2. AAC — guided by Nodi
 
-## NeuroStrip
-Retains the V2.4 NeuroStrip setup, visual guides, pathways, fullscreen viewer, and step carousels.
+## AAC products
+- NeuroNode Trilogy
+- NeuroNode Duo
+- EyeGaze Duo (Windows)
+- Oskol 2 (iOS)
+- UNO Touch
+- NeuroNode
+- Mounts (Table Stand / Floor Stand)
 
-## NeuroNode
-Built from:
-- NeuroNode User Guide Rev M (detailed technical source)
-- Control Bionics Trial Cards (simplified Easy Read / frontline guides)
+The Trial Cards PDF is treated as the priority source for AAC frontline instructions. The detailed NeuroNode User Guide is retained for deeper NeuroNode-specific information.
 
-Includes:
-- NeuroNode Duo quick start: iOS and Windows
-- NeuroNode Trilogy quick start: iOS and Windows
-- Overview and accessories
-- EMG placement
-- 3D Spatial control
-- Bluetooth / Shake to Wake / Standby
-- Signal and indicator lights
-- Charging
-- Electrode options, bezel and band
-- Controller App Graph / Home
-- Graph settings and scaling
-- Profiles and Auto Calibration
-- Grid 3 switch setup and HID F9
-- Advanced settings, switch filtering, advanced switching, Speech Generation
-- Power cycle, reset / Bluetooth scrub and re-pair
+## EyeGaze
+EyeGaze is deliberately lightweight and sits inside AAC.
+The two primary troubleshooting guides are:
+- USB cable connections
+- EyeGaze positioning
 
-## Nero
-Nero now routes both NeuroStrip and NeuroNode questions. This is still a free, rules-based assistant and does not require an API.
+The supplied EyeGaze posters are included at high quality.
+
+## V3.2 Guide Viewer
+- Removed left/right Previous and Next carousel navigation.
+- Guides now scroll vertically from top to bottom.
+- Popup is approximately 85% of browser width and 85% of browser height on desktop.
+- Images are substantially larger.
+- Portrait instruction sheets can use up to ~82% of the browser width.
+- Landscape screenshots can use up to ~88% of browser width.
+- Clicking an image opens it fullscreen.
+- Open image in new tab remains available.
+- Back and Close stay at the top of the support viewer.
 
 ## GitHub Pages
-1. Extract this ZIP.
-2. Upload `index.html`, `app.js`, `styles.css`, `README.md`, and `asset-manifest.json` to your repository root.
-3. Open/create the GitHub `assets` folder.
-4. Upload every file inside this build's local `assets` folder into the GitHub `assets` folder.
-5. Commit, wait for GitHub Pages to deploy, then refresh the site with Ctrl+F5.
-
-Videos are intentionally excluded.
+1. Extract the ZIP.
+2. Upload index.html, app.js, styles.css, README.md and asset-manifest.json to the repository root.
+3. Open the GitHub assets folder and upload every file inside this build's assets folder.
+4. Commit and allow GitHub Pages to deploy.
+5. Refresh with Ctrl+F5.
 
 
-## V3.1 — Dual Mascot Context
-- NeuroStrip content uses Nero.
-- NeuroNode + AAC content uses Nodi.
-- Mascot switches automatically when the user opens or scrolls into the relevant product area.
-- "Ask Nero" dynamically becomes "Ask Nodi" in NeuroNode/AAC context.
-- NeuroStrip retains Nero's idle / thinking / excited / proud expression behaviour.
-- Nodi uses the canonical NeuroNode mascot image supplied by the user.
-- Opening a NeuroNode guide automatically switches to Nodi; opening a NeuroStrip guide switches back to Nero.
-- Nero/Nodi routing still works without an API.
+V3.2.2: Support-guide images are displayed approximately 15% smaller within the 85% viewer. Click/fullscreen behaviour is retained.
