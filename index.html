@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Control Bionics Support Hub</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a href="#home" class="brand"><img src="./assets/control-bionics-logo.png" alt="Control Bionics"></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#neurostrip">NeuroStrip</a>
+    <a href="#neuronode">NeuroNode</a>
+    <a href="#quick-fixes">Quick Fixes</a>
+  </nav>
+  <label class="search">
+    <input id="searchInput" placeholder="Search support…">
+    <button id="searchBtn" type="button">Search</button>
+  </label>
+  <button id="askMascotTop" class="nero-header-btn" type="button">✦ Ask Nero</button>
+</header>
+
+<main id="home">
+<section class="hero hub-hero">
+  <div>
+    <span class="eyebrow">CONTROL BIONICS SUPPORT HUB</span>
+    <h1>What can we help you with?</h1>
+    <p>Choose a product, follow a visual support guide, or ask Nero to point you to the right instructions.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#products">Choose a product</a>
+      <button class="btn" id="heroAskMascot" type="button">Ask Nero</button>
+    </div>
+  </div>
+  <div class="hero-products-mini">
+    <img src="./assets/neurostrip-sensor.jpg" alt="NeuroStrip">
+    <span>+</span>
+    <img src="./assets/neuronode-product.jpg" alt="NeuroNode">
+  </div>
+</section>
+
+<section id="products" class="section">
+  <div class="section-head">
+    <div><span class="eyebrow">PRODUCT SUPPORT</span><h2>Choose your product</h2></div>
+    <p>Each product has its own setup, troubleshooting and visual walkthroughs.</p>
+  </div>
+  <div class="product-selector">
+    <a class="product-select-card ns" href="#neurostrip">
+      <div class="product-visual"><img src="./assets/neurostrip-sensor.jpg" alt="NeuroStrip"></div>
+      <span class="eyebrow">sEMG + MOVEMENT</span>
+      <h3>NeuroStrip</h3>
+      <p>Setup, skin preparation, placement, protocols, sessions, measurements, troubleshooting and dysphagia.</p>
+      <strong>Open NeuroStrip support →</strong>
+    </a>
+    <a class="product-select-card nn" href="#neuronode">
+      <div class="product-visual"><img src="./assets/neuronode-product.jpg" alt="NeuroNode"></div>
+      <span class="eyebrow">AAC + EMG / SPATIAL ACCESS</span>
+      <h3>NeuroNode</h3>
+      <p>Quick start, placement, Bluetooth, signal indicators, Controller App, Grid 3, calibration and troubleshooting.</p>
+      <strong>Open NeuroNode support →</strong>
+    </a>
+  </div>
+</section>
+
+<section class="mascot-intro">
+  <div class="mascot-pair">
+    <div class="mascot-mini">
+      <img src="./assets/nero-transparent.png" alt="Nero, NeuroStrip mascot">
+      <strong>Nero</strong>
+      <small>NeuroStrip support</small>
+    </div>
+    <div class="mascot-switch-mark">⇄</div>
+    <div class="mascot-mini">
+      <img src="./assets/nodi-neuronode.png" alt="Nodi, NeuroNode mascot">
+      <strong>Nodi</strong>
+      <small>NeuroNode + AAC support</small>
+    </div>
+  </div>
+  <div>
+    <span class="eyebrow">PRODUCT-AWARE SUPPORT</span>
+    <h2>The right mascot follows the right product</h2>
+    <p>When you are in NeuroStrip content, Nero is your guide. When you move into NeuroNode or AAC content, the assistant automatically changes to Nodi.</p>
+    <div class="hero-actions">
+      <button class="btn primary" id="askMascotIntro" type="button">Ask the current guide</button>
+      <a class="btn" href="#quick-fixes">View quick fixes</a>
+    </div>
+  </div>
+</section>
+
+<!-- NeuroStrip -->
+<section id="neurostrip" class="product-zone neurostrip-zone">
+  <div class="product-zone-hero">
+    <div>
+      <span class="eyebrow">NEUROSTRIP SUPPORT</span>
+      <h2>NeuroStrip</h2>
+      <p>Visual instructions for setup, sEMG placement, app workflows, protocols, sessions and data review.</p>
+    </div>
+    <img src="./assets/neurostrip-sensor.jpg" alt="NeuroStrip sensor">
+  </div>
+
+  <div class="zone-inner">
+    <h3>Choose your pathway</h3>
+    <div class="path-grid">
+      <button class="path-card" data-open="ns-rehab"><span>♿</span><strong>Rehabilitation</strong><small>Activation, repeatable sessions, progress tracking and measurements.</small></button>
+      <button class="path-card" data-open="ns-sport"><span>🏃</span><strong>Sports & Performance</strong><small>Muscle comparison, protocols, live monitoring and repeated measurements.</small></button>
+      <button class="path-card" data-open="ns-dysphagia"><span>◉</span><strong>Dysphagia</strong><small>Swallowing sEMG biofeedback resources and use cases.</small></button>
+    </div>
+
+    <h3 class="subhead">NeuroStrip Get Help guides</h3>
+    <div class="guide-grid">
+      <button class="guide-card" data-open="ns-quickstart"><b>01</b><strong>Quick start</strong><small>Overview and preparation</small></button>
+      <button class="guide-card" data-open="ns-skinprep"><b>02</b><strong>Skin preparation</strong><small>Prepare the target site</small></button>
+      <button class="guide-card" data-open="ns-placement"><b>03</b><strong>EMG placement</strong><small>Placement rules and examples</small></button>
+      <button class="guide-card" data-open="ns-patch"><b>04</b><strong>Patch alignment</strong><small>Six-step alignment process</small></button>
+      <button class="guide-card" data-open="ns-connections"><b>05</b><strong>Connect NeuroStrip</strong><small>Scan, connect and assign channels</small></button>
+      <button class="guide-card" data-open="ns-patient"><b>06</b><strong>Patient / Client Manager</strong><small>Clients, sessions and measurements</small></button>
+      <button class="guide-card" data-open="ns-protocols"><b>07</b><strong>Create / edit protocols</strong><small>Timeline, targets and preview</small></button>
+      <button class="guide-card" data-open="ns-session"><b>08</b><strong>Start a session</strong><small>Devices, channels and protocol selection</small></button>
+      <button class="guide-card" data-open="ns-graph"><b>09</b><strong>Session graph & controls</strong><small>Live sEMG and session widgets</small></button>
+      <button class="guide-card" data-open="ns-review"><b>10</b><strong>Review & measurements</strong><small>Saved sessions, exports and trends</small></button>
+      <button class="guide-card" data-open="ns-troubleshooting"><b>11</b><strong>Troubleshooting</strong><small>Connectivity and erratic sEMG checks</small></button>
+      <button class="guide-card" data-open="ns-dysphagia"><b>12</b><strong>Dysphagia</strong><small>Dedicated swallowing sEMG section</small></button>
+    </div>
+  </div>
+</section>
+
+<!-- NeuroNode -->
+<section id="neuronode" class="product-zone neuronode-zone">
+  <div class="product-zone-hero nn-hero">
+    <div>
+      <span class="eyebrow">NEURONODE + AAC SUPPORT</span>
+      <h2>NeuroNode</h2>
+      <p>Simple frontline guidance first, with the detailed NeuroNode User Guide available inside each relevant walkthrough.</p>
+    </div>
+    <img src="./assets/neuronode-product.jpg" alt="NeuroNode">
+  </div>
+
+  <div class="zone-inner">
+    <h3>Quick Start by system</h3>
+    <div class="quickstart-grid">
+      <button class="quick-card" data-open="nn-duo-ios"><strong>NeuroNode Duo</strong><span>iOS / Grid for iPad</span><small>5-step Easy Read setup</small></button>
+      <button class="quick-card" data-open="nn-duo-windows"><strong>NeuroNode Duo</strong><span>Windows / Grid 3</span><small>5-step Easy Read setup</small></button>
+      <button class="quick-card" data-open="nn-trilogy-ios"><strong>NeuroNode Trilogy</strong><span>iOS / Oskol 2</span><small>Eye gaze + NeuroNode setup</small></button>
+      <button class="quick-card" data-open="nn-trilogy-windows"><strong>NeuroNode Trilogy</strong><span>Windows</span><small>Eye gaze + NeuroNode setup</small></button>
+    </div>
+
+    <h3 class="subhead">NeuroNode Get Help guides</h3>
+    <div class="guide-grid">
+      <button class="guide-card orange" data-open="nn-overview"><b>01</b><strong>Overview & accessories</strong><small>Device parts and supplied accessories</small></button>
+      <button class="guide-card orange" data-open="nn-emg"><b>02</b><strong>EMG placement</strong><small>Positioning and good electrode contact</small></button>
+      <button class="guide-card orange" data-open="nn-spatial"><b>03</b><strong>3D Spatial control</strong><small>Movement-based switching setup</small></button>
+      <button class="guide-card orange" data-open="nn-connect"><b>04</b><strong>Connect / Shake to Wake</strong><small>Bluetooth connection and reconnection</small></button>
+      <button class="guide-card orange" data-open="nn-signal"><b>05</b><strong>Signal & indicator lights</strong><small>What each colour means</small></button>
+      <button class="guide-card orange" data-open="nn-charge"><b>06</b><strong>Charging</strong><small>Charging plate and battery guidance</small></button>
+      <button class="guide-card orange" data-open="nn-electrodes"><b>07</b><strong>Electrodes, bezel & band</strong><small>Electrode types and physical setup</small></button>
+      <button class="guide-card orange" data-open="nn-controller"><b>08</b><strong>Controller App basics</strong><small>Graph, Home and main controls</small></button>
+      <button class="guide-card orange" data-open="nn-graph"><b>09</b><strong>Graph & thresholds</strong><small>Graph settings and signal thresholds</small></button>
+      <button class="guide-card orange" data-open="nn-profiles"><b>10</b><strong>Profiles & Auto Calibration</strong><small>Save settings and calibrate</small></button>
+      <button class="guide-card orange" data-open="nn-grid3"><b>11</b><strong>Grid 3 switch setup</strong><small>Connection key and HID F9</small></button>
+      <button class="guide-card orange" data-open="nn-advanced"><b>12</b><strong>Advanced settings</strong><small>Filtering, switching and speech generation</small></button>
+      <button class="guide-card orange featured" data-open="nn-troubleshoot"><b>13</b><strong>Troubleshooting / Reset</strong><small>Power cycle, Bluetooth scrub and re-pair</small></button>
+    </div>
+  </div>
+</section>
+
+<section id="quick-fixes" class="section soft">
+  <div class="section-head">
+    <div><span class="eyebrow">POPULAR SOLUTIONS</span><h2>Quick fixes</h2></div>
+    <p>Start here for the most common frontline issues.</p>
+  </div>
+  <div class="fix-grid">
+    <button data-open="nn-connect"><span>🔵</span><strong>NeuroNode won’t connect</strong><small>Shake to Wake and Bluetooth connection</small></button>
+    <button data-open="nn-troubleshoot"><span>📌</span><strong>Reset / Bluetooth scrub</strong><small>Preferred and manual reset workflow</small></button>
+    <button data-open="nn-signal"><span>💡</span><strong>What does the light mean?</strong><small>Blue, green, yellow and red indicators</small></button>
+    <button data-open="nn-grid3"><span>⌨️</span><strong>NeuroNode not scanning in Grid 3</strong><small>Switch Connection and F9 keycode</small></button>
+    <button data-open="ns-connections"><span>📶</span><strong>NeuroStrip won’t connect</strong><small>Scan and assign channels</small></button>
+    <button data-open="ns-troubleshooting"><span>📈</span><strong>NeuroStrip signal looks wrong</strong><small>Skin, patch and alignment checks</small></button>
+  </div>
+</section>
+
+<section id="ask-nero" class="section nero-assistant-section">
+  <div class="section-head">
+    <div><span class="eyebrow">FRONTLINE GUIDE</span><h2 id="assistantTitle">Ask Nero</h2></div>
+    <p>Ask a plain-English question. Nero handles NeuroStrip content, while Nodi handles NeuroNode and AAC content.</p>
+  </div>
+  <div class="nero-chat-layout">
+    <div class="nero-chat-character">
+      <img id="assistantChatCharacter" src="./assets/nero-transparent.png" alt="Nero">
+      <strong id="assistantIntroName">Hi, I’m Nero 👋</strong>
+      <small>Try: “My NeuroNode is flashing red”, “How do I connect NeuroNode to Grid 3?”, or “How do I create a NeuroStrip protocol?”</small>
+    </div>
+    <div class="nero-chat-card">
+      <div id="neroChatLog" class="nero-chat-log" aria-live="polite">
+        <div class="nero-msg assistant" id="assistantGreeting"><strong>Nero:</strong> What can I help you with?</div>
+      </div>
+      <div class="nero-suggestions">
+        <button data-nero-q="My NeuroNode will not connect">NeuroNode won’t connect</button>
+        <button data-nero-q="My NeuroNode is flashing red">Red NeuroNode light</button>
+        <button data-nero-q="Connect NeuroNode to Grid 3">Grid 3 setup</button>
+        <button data-nero-q="How do I create a NeuroStrip protocol?">NeuroStrip protocol</button>
+      </div>
+      <div class="nero-input-row">
+        <input id="neroInput" placeholder="Ask Nero a support question…">
+        <button id="neroSend" class="btn primary" type="button">Send</button>
+      </div>
+      <small class="nero-note">The assistants are free rules-based guides. For questions outside the documented support flows, contact Control Bionics Support.</small>
+    </div>
+  </div>
+</section>
+
+<section id="support" class="support">
+  <div>
+    <span class="eyebrow">NEED MORE HELP?</span>
+    <h2>Contact Control Bionics Support</h2>
+    <p>If the documented steps do not resolve the issue, escalate to Support.</p>
+  </div>
+  <div class="support-actions">
+    <a class="btn primary" href="mailto:Support.au@controlbionics.com">Email Support</a>
+    <a class="btn" target="_blank" rel="noopener" href="https://bookings.cloud.microsoft/book/ControlBionics@controlbionics.com/?ismsaljsauthenabled=true">Book Support</a>
+  </div>
+</section>
+</main>
+
+<div id="mascotCompanion" class="nero-companion">
+  <img id="mascotCompanionImg" src="./assets/nero-transparent.png" alt="Nero">
+  <button id="floatingMascotBtn" type="button">✦ Ask Nero</button>
+</div>
+
+<div id="imageLightbox" class="image-lightbox" aria-hidden="true">
+  <div class="image-lightbox-backdrop" data-lightbox-close></div>
+  <div class="image-lightbox-panel">
+    <button class="image-lightbox-close" type="button" data-lightbox-close>×</button>
+    <img id="imageLightboxImg" src="" alt="">
+    <a id="imageLightboxNewTab" class="lightbox-newtab" target="_blank" rel="noopener">Open image in new tab ↗</a>
+  </div>
+</div>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="backdrop" data-close></div>
+  <section class="dialog" role="dialog" aria-modal="true">
+    <button class="back-btn" id="backBtn">← Back</button>
+    <button class="close-btn" data-close>×</button>
+    <div id="modalContent"></div>
+  </section>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
