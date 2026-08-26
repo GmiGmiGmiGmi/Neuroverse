@@ -1,8 +1,11 @@
 const guides={
 // NeuroStrip
 "ns-quickstart":{title:"NeuroStrip — Quick start & overview",source:"NeuroStrip User Guide",steps:[
-['./assets/quick view.png',"Quick view","Review the supplied Quick View guide for a high-level overview of NeuroStrip setup and operation."],
-["./assets/ns-guide-overview.png","Overview","Confirm NeuroStrip is charged, prepare the target site, connect it in the application and select the appropriate workflow."],
+ [
+  "https://hounpydwftmlwncezujd.supabase.co/storage/v1/object/public/support-images/NeuroStrip/getting-started/quick%20view.png",
+      "Quick view",
+      "Review the supplied Quick View guide for a high-level overview of NeuroStrip setup and operation."],
+    ["./assets/ns-guide-overview.png","Overview","Confirm NeuroStrip is charged, prepare the target site, connect it in the application and select the appropriate workflow."],
 ["./assets/ns-guide-dashboard.png","Application dashboard","Use the dashboard to access Clients, Protocols and Connections."]
 ]},
 "ns-skinprep":{title:"NeuroStrip — Skin preparation",source:"Supplied Skin Preparation guide",steps:[
